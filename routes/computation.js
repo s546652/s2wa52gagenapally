@@ -11,13 +11,16 @@ router.get('/', function(req, res, next) {
     if(x==undefined)
         x=0.5;
 
-    let cbrt=Math.cbrt(x);
+    /*let cbrt=Math.cbrt(x);
     res.render('computation',{title:'Computation',values:' applied to '+x+' is '+cbrt});
     
     let atan2 =Math.atanh(x);
     res.render('computation',{title:'Computation',values:' applied to 0.5'+' is '+atan2});
-    
-    a=8;b=4;
+    */
+    //if(x==undefined)
+    var a=8;
+    var b=4;
+
     let atanh =Math.atan2(a, b);
     res.render('computation', {
         title: 'Computation',
