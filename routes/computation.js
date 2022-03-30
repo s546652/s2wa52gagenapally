@@ -13,10 +13,10 @@ router.get('/', function(req, res, next) {
 
     let cbrt=Math.cbrt(x);
     res.render('computation',{title:'Computation',values:' applied to '+x+' is '+cbrt});
-    let atan2=Math.atan2(x);
-    res.render('computation',{title:'Computation',values:' applied to '+x+' is '+atan2});
+    let atan2=Math.atan2(0.5);
+    res.render('computation',{title:'Computation',values:' applied to 0.5'+' is '+atan2});
     let atanh=Math.atanh(8,4);
-    res.render('computation',{title:'Computation',values:' applied to '+x+' is '+atanh});
+    res.render('computation',{title:'Computation ',values:'8,4'+' is '+atanh});
 });
 
 module.exports = router;
