@@ -14,9 +14,9 @@ router.get('/', function(req, res, next) {
     let cbrt=Math.cbrt(x);
     res.render('computation',{title:'Computation',values:' applied to '+x+' is '+cbrt});
     let atan2 =Math.atanh(0.5);
-    res.render('computation',{title:'Computation',values1:' applied to 0.5'+' is '+atan2});
+    res.render('computation',{title:'Computation',values:' applied to 0.5'+' is '+atan2});
     let atanh =Math.atan2(8, 4);
-    res.render('computation',{title:'Computation ',values2:'8,4'+' is '+atanh});
+    res.render('computation',{title:'Computation ',values:'8,4'+' is '+atanh});
 });
 
 module.exports = router;
