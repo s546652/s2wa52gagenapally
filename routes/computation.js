@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
         title: 'Computation',
         values: `applied to ` + x + ` is ` + cbrt ,
         v1: `applied to ` + x + ` is ` + atan2,
-        v2: `applied to ` + a+b + ` is ` + atanh,
+        v2: `applied to ` + a+','+b + ` is ` + atanh,
       });
     
 
