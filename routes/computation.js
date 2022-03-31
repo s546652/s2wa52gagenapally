@@ -9,23 +9,24 @@ router.get('/', function(req, res, next) {
     x=req.query.x;
 
     if(x==undefined)
-        x=10;
-    var y = 5
-    let cbrt=Math.hypot(x,y);
+        x=0.5;
+
+    let cbrt=Math.cbrt(x);
     //res.render('computation',{title:'Computation',values:' applied to '+x+' is '+cbrt});
-    var c =7.6
-    let atan2 =Math.ceil(c);
+    
+    let atan2 =Math.atanh(x);
     //res.render('computation',{title:'Computation',values:' applied to 0.5'+' is '+atan2});
     
     //if(x==undefined)
-    var a=0;
+    var a=8;
+    var b=4;
 
-    let atanh =Math.clz32(a);
+    let atanh =Math.atan2(a, b);
     res.render('computation', {
         title: 'Computation',
-        values: 'applied to ' + x +','+y+ 'is '+ cbrt ,
-        v1: 'applied to ' + x + ' is ' + atan2,
-        v2: 'applied to ' + a + ' is ' + atanh,
+        values: `applied to ` + x + ` is ` + cbrt ,
+        v1: `applied to ` + x + ` is ` + atan2,
+        v2: `applied to ` + a+','+b + ` is ` + atanh,
       });
     
 
